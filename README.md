@@ -1,8 +1,8 @@
 # Self-Hosted Creator Analytics Dashboard
 
-A private-by-default, CSV-powered dashboard for creators who want to understand what to make next—not just watch view counts move.
+A public demo of a private-by-default, CSV-powered dashboard for creators who want to understand what to make next—not just watch view counts move.
 
-This project is designed to validate demand for a paid automation pack without exposing any private home-lab details, real YouTube channel data, OAuth secrets, internal hostnames, or private network paths.
+Explore synthetic YouTube Shorts data, compare formats and experiments, and evaluate the self-hosted workflow without connecting an account. No private home-lab details, real channel data, OAuth secrets, internal hostnames, or private network paths are included.
 
 ![Creator Analytics dashboard overview](assets/dashboard-desktop.png)
 
@@ -25,9 +25,11 @@ This proof of concept turns a simple content ledger and performance snapshots in
 - music/audio experiments
 - reusable CSV-based analytics history
 
-## What This POC Does Not Do
+## Current Status
 
-This public POC does not:
+This repository is a functional static demo using synthetic data. CSV import, reset, and export work locally. Automated YouTube API collection and scheduled refreshes are planned for a packaged edition and are not included here.
+
+The public demo does not:
 
 - connect to a real YouTube account
 - include OAuth credentials
@@ -61,7 +63,7 @@ Use **Load metrics CSV** to test your own sanitized export, **Reset demo** to re
 ## Folder Map
 
 ```text
-creator-analytics-dashboard-poc/
+self-hosted-creator-analytics/
   README.md
   .env.example
   config.example.json
@@ -87,7 +89,7 @@ creator-analytics-dashboard-poc/
 
 ## Validation Goal
 
-The purpose of this POC is to answer:
+This early preview is also intended to answer:
 
 ```text
 Do small creators or self-hosted users care enough about this workflow to star, try, request, join a waitlist, or pay?

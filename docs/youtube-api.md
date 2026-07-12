@@ -1,6 +1,6 @@
 # YouTube API Notes
 
-The public POC does not connect to the YouTube API.
+The public demo does not connect to the YouTube API.
 
 The paid/pro version may include a helper that:
 
@@ -10,7 +10,7 @@ The paid/pro version may include a helper that:
 - writes daily CSV snapshots
 - never stores credentials in the repository
 
-## Why The POC Is Offline
+## Why The Public Demo Is Offline
 
 Offline fake data makes the public project:
 
@@ -27,4 +27,3 @@ Offline fake data makes the public project:
 4. User stores the downloaded JSON in `secrets/`.
 5. User runs the refresh script locally.
 6. Script writes daily rows to `sample-data/performance-snapshots.csv` or a configured data path.
-

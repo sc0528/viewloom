@@ -5,7 +5,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-Write-Host "POC placeholder only."
+Write-Host "Demo placeholder only."
 Write-Host "Task name: $TaskName"
 
 if ($DryRun) {
@@ -14,4 +14,3 @@ if ($DryRun) {
 }
 
 Write-Host "A pro version could register a scheduled refresh task here."
-

@@ -1,6 +1,6 @@
 # Product Validation
 
-This POC should validate demand before building a full paid automation pack.
+This early preview should validate demand before building a full paid automation pack.
 
 ## Target Users
 
@@ -56,4 +56,3 @@ Strong signals:
 - preorders
 - paid setup requests
 - users sharing screenshots of their own dashboard
-

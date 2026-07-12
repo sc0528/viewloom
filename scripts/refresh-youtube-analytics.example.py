@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Example placeholder for a future YouTube analytics refresh script.
 
-This file is intentionally non-functional in the public POC.
+This file is intentionally non-functional in the public demo.
 It shows where a paid/pro version could place user-owned API automation.
 """
 
@@ -18,7 +18,7 @@ def main() -> int:
     args = parser.parse_args()
 
     config_path = Path(args.config)
-    print(f"POC placeholder only. Config would be read from: {config_path}")
+    print(f"Demo placeholder only. Config would be read from: {config_path}")
     print("No API calls were made.")
     if args.dry_run:
         print("Dry run complete.")
@@ -27,4 +27,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

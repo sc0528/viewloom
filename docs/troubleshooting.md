@@ -30,5 +30,4 @@ http://localhost:8080/dashboard/
 
 ## The Data Looks Fake
 
-Correct. This POC intentionally uses fake data only.
-
+Correct. This public demo intentionally uses synthetic data only.

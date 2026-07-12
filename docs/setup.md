@@ -1,6 +1,6 @@
 # Setup
 
-This POC is static.
+This public demo is static.
 
 ## Option 1: Open Directly
 
@@ -49,4 +49,3 @@ to:
 ```
 
 Only the paid/pro version would use `.env` for real API automation.
-

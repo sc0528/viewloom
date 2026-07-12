@@ -1,11 +1,11 @@
 # GitHub Launch Checklist
 
-Use this checklist before making the POC public.
+Use this checklist before promoting the public demo.
 
 ## Repository
 
 - [ ] Initialize Git and choose a clear public repository name.
-- [ ] Confirm the license matches the intended free POC and future paid-pack model.
+- [ ] Confirm the license matches the intended public demo and future paid-pack model.
 - [ ] Add a concise repository description and topics such as `creator-analytics`, `youtube-analytics`, `self-hosted`, and `shorts`.
 - [ ] Enable Issues and add a validation-focused issue template.
 - [ ] Add a repository social preview after a sanitized dashboard screenshot is available.

@@ -1,6 +1,6 @@
 # Security
 
-This POC is designed to be safe to publish.
+This public demo is designed to be safe to publish.
 
 ## Do Not Commit
 
@@ -43,4 +43,3 @@ Do not use real:
 If this becomes a paid pack, users should create and own their own Google OAuth credentials.
 
 Do not ship shared credentials.
-
