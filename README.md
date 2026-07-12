@@ -4,6 +4,15 @@ A private-by-default, CSV-powered dashboard for creators who want to understand 
 
 This project is designed to validate demand for a paid automation pack without exposing any private home-lab details, real YouTube channel data, OAuth secrets, internal hostnames, or private network paths.
 
+![Creator Analytics dashboard overview](assets/dashboard-desktop.png)
+
+<details>
+<summary>Mobile dashboard preview</summary>
+
+![Creator Analytics mobile dashboard](assets/dashboard-mobile.png)
+
+</details>
+
 ## See The Signal Behind Your Shorts
 
 This proof of concept turns a simple content ledger and performance snapshots into practical comparisons for:
