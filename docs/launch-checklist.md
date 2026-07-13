@@ -4,10 +4,11 @@ Use this checklist before promoting the public demo.
 
 ## Repository
 
-- [ ] Initialize Git and choose a clear public repository name.
-- [ ] Confirm the license matches the intended public demo and future paid-pack model.
-- [ ] Add a concise Viewloom repository description and topics such as `creator-analytics`, `youtube-analytics`, `self-hosted`, and `shorts`.
-- [ ] Enable Issues and add a validation-focused issue template.
+- [x] Initialize Git and choose a clear public repository name.
+- [x] Confirm the license matches the intended public demo and future paid-pack model.
+- [x] Add a concise Viewloom repository description and relevant discovery topics.
+- [x] Enable Issues and add a validation-focused issue template.
+- [x] Publish a zero-install synthetic-data demo with GitHub Pages.
 - [ ] Add a repository social preview after a sanitized dashboard screenshot is available.
 
 ## Safety and QA
@@ -21,9 +22,9 @@ Use this checklist before promoting the public demo.
 
 ## Validation
 
-- [ ] Choose one primary CTA: GitHub star, feedback issue, or waitlist signup.
-- [ ] Create a short feedback issue asking who the user is, how they track performance today, and what they would pay to automate.
-- [ ] Define a two-week validation window and record traffic, stars, issues, signups, and preorder intent.
+- [x] Choose one primary CTA: the creator feedback form.
+- [x] Create a feedback form asking who the user is, how they track performance today, and what they would pay to automate.
+- [x] Define a two-week validation window and record the pre-promotion baseline.
 - [ ] Share only in communities where self-promotion is allowed.
 - [ ] Decide the paid-pack threshold before launch, such as 25 qualified signups or 5 preorder commitments.
 

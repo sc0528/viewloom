@@ -1,0 +1,76 @@
+name: Creator feedback
+description: Help shape Viewloom by sharing your current analytics workflow and what you want automated.
+title: "Creator feedback: "
+labels: ["creator-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping shape Viewloom. Please do not include channel names, private analytics, account identifiers, or credentials. General answers are enough.
+  - type: dropdown
+    id: content
+    attributes:
+      label: What do you publish?
+      options:
+        - Mostly Shorts
+        - Mostly standard videos
+        - A mix of Shorts and standard videos
+        - I am preparing to launch a channel
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: How do you track performance today?
+      description: Tell us about the tools or manual process you use. Keep channel-specific details private.
+      placeholder: I currently use YouTube Studio plus...
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: What decision is hardest to make from your current analytics?
+      placeholder: Deciding whether to repeat a topic, format, hook, or video length...
+    validations:
+      required: true
+  - type: checkboxes
+    id: automation
+    attributes:
+      label: What would you want Viewloom to automate?
+      options:
+        - label: Secure YouTube API setup
+        - label: Scheduled metric collection
+        - label: Shorts and standard-video comparisons
+        - label: Topic, format, hook, and retention experiments
+        - label: CSV exports and long-term history
+        - label: Self-hosted deployment and updates
+  - type: dropdown
+    id: price
+    attributes:
+      label: If it solved this problem, what one-time price would feel reasonable?
+      options:
+        - I would only use a free edition
+        - $19–$29
+        - $30–$49
+        - $50–$79
+        - More than $79
+        - Not sure yet
+    validations:
+      required: true
+  - type: dropdown
+    id: testing
+    attributes:
+      label: Would you try an early self-hosted version?
+      options:
+        - Yes
+        - Maybe, with setup guidance
+        - Not yet
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included private channel data, credentials, tokens, or personally identifying analytics.
+          required: true

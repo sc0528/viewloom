@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Open the live Viewloom demo
+    url: https://sc0528.github.io/viewloom/
+    about: Explore the synthetic-data dashboard before sharing feedback.

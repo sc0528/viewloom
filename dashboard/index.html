@@ -102,6 +102,7 @@
       box-shadow: 0 1px 0 rgba(17, 24, 39, .03);
     }
     .btn.primary { background: var(--blue); border-color: var(--blue); color: #fff; }
+    a.btn { text-decoration: none; }
     .file-label input { display: none; }
     .grid { display: grid; gap: 12px; }
     .kpis { grid-template-columns: repeat(5, minmax(0, 1fr)); }
@@ -179,6 +180,7 @@
       margin-bottom: 14px;
     }
     .repo-callout p { margin: 4px 0 0; color: var(--muted); }
+    .repo-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
     code { background: var(--panel-2); padding: 2px 5px; border-radius: 5px; }
     @media (max-width: 1180px) {
       .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -194,6 +196,7 @@
       .two, .three { grid-template-columns: 1fr; }
       header, .repo-callout { grid-template-columns: 1fr; display: grid; }
       .actions { justify-content: flex-start; }
+      .repo-actions { justify-content: flex-start; }
     }
     @media (max-width: 620px) {
       main { padding: 18px 14px 28px; }
@@ -254,10 +257,13 @@
 
       <section class="repo-callout">
         <div>
-          <strong>What this dashboard does</strong>
-          <p>Compare YouTube topics, formats, retention, cadence, and subscriber conversion from a lightweight local dashboard.</p>
+          <strong>Exploring Viewloom?</strong>
+          <p>Compare YouTube topics, formats, retention, cadence, and subscriber conversion—then tell us what would make it useful for your channel.</p>
         </div>
-        <div><span class="pill hot">Synthetic data</span></div>
+        <div class="repo-actions">
+          <span class="pill hot">Synthetic data</span>
+          <a class="btn primary" href="https://github.com/sc0528/viewloom/issues/new?template=creator-feedback.yml" target="_blank" rel="noopener noreferrer">Become a tester</a>
+        </div>
       </section>
 
       <div class="content-filter" role="group" aria-label="Content type">
@@ -340,8 +346,9 @@
             <div class="insights">
               <div class="insight"><strong>Static dashboard</strong><span>Open locally, load sample CSVs, and understand the product without API credentials.</span></div>
               <div class="insight"><strong>Fake data only</strong><span>Safe to publish because it contains no private account or network details.</span></div>
-              <div class="insight"><strong>Validation CTA</strong><span>Use GitHub stars, issue comments, waitlist clicks, and preorders to decide whether to build the pro pack.</span></div>
+              <div class="insight"><strong>Your feedback decides what comes next</strong><span>Tell us how you track YouTube performance today and which parts you would pay to automate.</span></div>
             </div>
+            <a class="btn primary" href="https://github.com/sc0528/viewloom/issues/new?template=creator-feedback.yml" target="_blank" rel="noopener noreferrer" style="margin-top:12px">Share creator feedback</a>
           </div>
           <div class="panel pad">
             <div class="panel-head"><h2>Possible Pro Pack</h2><span class="note">$19-$49 test</span></div>

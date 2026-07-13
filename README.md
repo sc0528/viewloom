@@ -6,6 +6,8 @@ Viewloom is a public demo of a private-by-default, CSV-powered workspace for cre
 
 Explore synthetic YouTube data, compare Shorts and standard videos, and evaluate the self-hosted workflow without connecting an account. No private home-lab details, real channel data, OAuth secrets, internal hostnames, or private network paths are included.
 
+[**Open the live demo**](https://sc0528.github.io/viewloom/) · [**Become a tester**](https://github.com/sc0528/viewloom/issues/new?template=creator-feedback.yml) · [View the source](https://github.com/sc0528/viewloom)
+
 ![Viewloom dashboard overview](assets/viewloom-desktop-demo.png)
 
 <details>
@@ -44,7 +46,11 @@ It uses synthetic sample data only. The included workspace demonstrates a mixed 
 
 ## Try The Demo
 
-Open:
+The fastest way to explore Viewloom is the hosted, synthetic-data demo:
+
+**[Launch Viewloom →](https://sc0528.github.io/viewloom/)**
+
+Nothing is connected to YouTube and no account is required. To run the same demo locally, open:
 
 ```text
 dashboard/index.html
@@ -61,6 +67,14 @@ python -m http.server 8000
 Then open `http://localhost:8000/dashboard/`.
 
 Use **Load metrics CSV** to test your own sanitized export, **Reset demo** to restore the sample, and **Export snapshot** to download the active metrics.
+
+## Help Shape Viewloom
+
+Viewloom is looking for creators who want a clearer way to compare Shorts and standard videos without sending channel data to another analytics service.
+
+**[Become an early tester](https://github.com/sc0528/viewloom/issues/new?template=creator-feedback.yml)** if you are willing to share how you track performance today and what you would want automated. You can answer without posting channel names, URLs, or private analytics.
+
+If the idea is useful but you are not ready to test, starring the repository is a simple signal that the project should continue.
 
 ## Folder Map
 

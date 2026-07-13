@@ -56,3 +56,17 @@ Strong signals:
 - preorders
 - paid setup requests
 - users sharing screenshots of their own dashboard
+
+## Public Validation Baseline
+
+The active validation window begins **July 13, 2026**, when the hosted demo and structured creator-feedback form were published.
+
+Baseline before promotion:
+
+- 0 stars
+- 0 forks
+- 0 feedback issues
+- 1 unique repository visitor
+- 16 unique cloners reported by GitHub (treat as directional because automated activity may be included)
+
+Check launch health after 48 hours, early demand after 7 days, and make the first continue/revise/stop decision after 14 days. Measure from active promotion, not repository creation alone.
