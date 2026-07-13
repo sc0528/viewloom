@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title">
   <title id="logo-title">Viewloom</title>
   <rect width="64" height="64" rx="12" fill="#06182c"/>
-  <path d="M32 9 51 20v22L43 47v-7.2l2-1.2V23.4L32 16 19 23.4v15.2l2 1.2V47l-8-5V20L32 9Z" fill="#fff"/>
-  <path d="M24 37h5v10h-5V37Zm8-7h5v17h-5V30Zm8-8h5v25h-5V22Z" fill="#0b63e5"/>
+  <path d="m29 10-15 9v26l9 5.5v-7l-3-1.8V22.3l9-5.4V10Zm6 0v6.9l9 5.4v19.4l-3 1.8v7l9-5.5V19l-15-9Z" fill="#fff"/>
+  <path d="m22 27 6 3.5v8.7l4 6.4V54l-6-3.5v-3.2l-4-6.4V27Zm20 0-6 3.5v8.7l-4 6.4V54l6-3.5v-3.2l4-6.4V27Z" fill="#0b63e5"/>
+  <path d="m29 23 6 3.5v9.4l-3 4.8-3-4.8V23Z" fill="#fff"/>
 </svg>
