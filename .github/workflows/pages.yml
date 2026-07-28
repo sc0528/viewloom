@@ -1,12 +1,15 @@
-name: Deploy Viewloom demo
+name: Refresh and deploy Viewloom
 
 on:
   push:
     branches: [main]
+  schedule:
+    # Run at both UTC offsets, then gate to 09:30 America/New_York.
+    - cron: "30 13,14 * * *"
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -15,20 +18,58 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  prepare:
     runs-on: ubuntu-latest
+    outputs:
+      should-run: ${{ steps.gate.outputs.should-run }}
     steps:
+      - name: Check daily schedule
+        id: gate
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "schedule" ]] && [[ "$(TZ=America/New_York date +%H:%M)" != "09:30" ]]; then
+            echo "should-run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "should-run=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Check out repository
+        if: steps.gate.outputs.should-run == 'true'
         uses: actions/checkout@v7
+      - name: Capture repository interest
+        if: steps.gate.outputs.should-run == 'true' && github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ secrets.ANALYTICS_TOKEN || github.token }}
+        run: python scripts/capture_product_signal.py
+      - name: Validate dashboard data
+        if: steps.gate.outputs.should-run == 'true'
+        run: |
+          python -m json.tool analytics-data/snapshots.json > /dev/null
+          python -m unittest tests.test_capture_product_signal
+      - name: Commit daily snapshot
+        if: steps.gate.outputs.should-run == 'true' && github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add analytics-data/snapshots.json
+          git diff --cached --quiet || git commit -m "chore: capture daily product signal"
+          git push
       - name: Configure Pages
+        if: steps.gate.outputs.should-run == 'true'
         uses: actions/configure-pages@v6
       - name: Upload static site
+        if: steps.gate.outputs.should-run == 'true'
         uses: actions/upload-pages-artifact@v5
         with:
           path: .
+
+  deploy:
+    if: needs.prepare.outputs.should-run == 'true'
+    needs: prepare
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}product-signal/
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
