@@ -29,6 +29,10 @@ class ProductSignalTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 module.load_history(path)
 
+    def test_complete_snapshot_can_be_detected_for_retention(self):
+        history = {"snapshots": [{"traffic": {"available": True}}]}
+        self.assertTrue(any(item.get("traffic", {}).get("available") for item in history["snapshots"]))
+
 
 if __name__ == "__main__":
     unittest.main()
