@@ -79,8 +79,14 @@ def main() -> int:
     args = parser.parse_args()
     if not args.token:
         parser.error("Provide ANALYTICS_TOKEN, GH_TOKEN, or --token")
-    snapshot = capture(args.repository, args.token)
     history = load_history(args.output)
+    snapshot = capture(args.repository, args.token)
+    if (
+        not snapshot["traffic"]["available"]
+        and any(item.get("traffic", {}).get("available") for item in history["snapshots"])
+    ):
+        print("Traffic access is unavailable; retaining the last complete snapshot.", file=sys.stderr)
+        return 0
     today = snapshot["captured_at"][:10]
     snapshots = [item for item in history["snapshots"] if item.get("captured_at", "")[:10] != today]
     snapshots = sorted([*snapshots, snapshot], key=lambda item: item["captured_at"])[-400:]
