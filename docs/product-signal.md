@@ -1,8 +1,12 @@
 # Product Signal dashboard
 
-Viewloom publishes its daily product-interest dashboard at:
+Viewloom appears in the shared Product Signal Portfolio at:
 
-`https://sc0528.github.io/viewloom/product-signal/`
+`https://sc0528.github.io/hearthsignal/analytics-dashboard/?product=viewloom`
+
+The original Viewloom Product Signal URL redirects to this combined dashboard.
+Use the product switch at the top to move between Viewloom and HearthSignal.
+Viewloom's repository continues to collect and publish its own data independently.
 
 The `Refresh and deploy Viewloom` workflow captures data once daily at 9:30 AM
 America/New_York and can also be run manually. Two UTC schedule entries plus a
