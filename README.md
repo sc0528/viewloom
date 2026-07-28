@@ -6,6 +6,8 @@ Viewloom is a public demo of a private-by-default, CSV-powered workspace for cre
 
 Explore synthetic YouTube data, compare Shorts and standard videos, and evaluate the self-hosted workflow without connecting an account. No private home-lab details, real channel data, OAuth secrets, internal hostnames, or private network paths are included.
 
+[**View Product Signal**](https://sc0528.github.io/viewloom/product-signal/)
+
 [**Open the live demo**](https://sc0528.github.io/viewloom/) · [**Become a tester**](https://github.com/sc0528/viewloom/issues/new?template=creator-feedback.yml) · [View the source](https://github.com/sc0528/viewloom)
 
 ![Viewloom dashboard overview](assets/viewloom-desktop-demo.png)
