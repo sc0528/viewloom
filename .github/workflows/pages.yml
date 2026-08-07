@@ -4,8 +4,11 @@ on:
   push:
     branches: [main]
   schedule:
-    # Run at both UTC offsets, then gate to 09:30 America/New_York.
-    - cron: "30 13,14 * * *"
+    # Run at both UTC offsets, then select the one matching New York's current offset.
+    # Separate expressions let the gate identify the intended trigger even if GitHub
+    # starts the job late.
+    - cron: "30 13 * * *"
+    - cron: "30 14 * * *"
   workflow_dispatch:
 
 permissions:
@@ -27,11 +30,17 @@ jobs:
         id: gate
         shell: bash
         run: |
-          if [[ "${{ github.event_name }}" == "schedule" ]] && [[ "$(TZ=America/New_York date +%H:%M)" != "09:30" ]]; then
-            echo "should-run=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "should-run=true" >> "$GITHUB_OUTPUT"
+          should_run=true
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then
+            offset="$(TZ=America/New_York date +%z)"
+            expected_schedule="30 13 * * *"
+            [[ "$offset" == "-0500" ]] && expected_schedule="30 14 * * *"
+            if [[ "${{ github.event.schedule }}" != "$expected_schedule" ]]; then
+              should_run=false
+              echo "Skipping inactive daylight-saving-time trigger."
+            fi
           fi
+          echo "should-run=$should_run" >> "$GITHUB_OUTPUT"
       - name: Check out repository
         if: steps.gate.outputs.should-run == 'true'
         uses: actions/checkout@v7
