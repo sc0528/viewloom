@@ -8128,6 +8128,184 @@
         "referrers": [],
         "errors": []
       }
+    },
+    {
+      "captured_at": "2026-09-22T17:40:45+00:00",
+      "repository": "sc0528/viewloom",
+      "repository_metrics": {
+        "stars": 0,
+        "forks": 0,
+        "watchers": 0,
+        "open_issues": 1,
+        "size_kb": 1133,
+        "pushed_at": "2026-09-21T18:50:04Z"
+      },
+      "traffic": {
+        "available": true,
+        "window_days": 14,
+        "views": {
+          "count": 1,
+          "uniques": 1,
+          "views": [
+            {
+              "timestamp": "2026-09-08T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-09T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-10T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-11T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-12T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-13T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-14T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-15T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-16T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-17T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-18T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-19T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-20T00:00:00Z",
+              "count": 0,
+              "uniques": 0
+            },
+            {
+              "timestamp": "2026-09-21T00:00:00Z",
+              "count": 1,
+              "uniques": 1
+            }
+          ]
+        },
+        "clones": {
+          "count": 103,
+          "uniques": 46,
+          "clones": [
+            {
+              "timestamp": "2026-09-08T00:00:00Z",
+              "count": 5,
+              "uniques": 3
+            },
+            {
+              "timestamp": "2026-09-09T00:00:00Z",
+              "count": 4,
+              "uniques": 2
+            },
+            {
+              "timestamp": "2026-09-10T00:00:00Z",
+              "count": 6,
+              "uniques": 4
+            },
+            {
+              "timestamp": "2026-09-11T00:00:00Z",
+              "count": 5,
+              "uniques": 3
+            },
+            {
+              "timestamp": "2026-09-12T00:00:00Z",
+              "count": 5,
+              "uniques": 3
+            },
+            {
+              "timestamp": "2026-09-13T00:00:00Z",
+              "count": 5,
+              "uniques": 3
+            },
+            {
+              "timestamp": "2026-09-14T00:00:00Z",
+              "count": 4,
+              "uniques": 2
+            },
+            {
+              "timestamp": "2026-09-15T00:00:00Z",
+              "count": 15,
+              "uniques": 8
+            },
+            {
+              "timestamp": "2026-09-16T00:00:00Z",
+              "count": 11,
+              "uniques": 6
+            },
+            {
+              "timestamp": "2026-09-17T00:00:00Z",
+              "count": 4,
+              "uniques": 2
+            },
+            {
+              "timestamp": "2026-09-18T00:00:00Z",
+              "count": 3,
+              "uniques": 3
+            },
+            {
+              "timestamp": "2026-09-19T00:00:00Z",
+              "count": 14,
+              "uniques": 10
+            },
+            {
+              "timestamp": "2026-09-20T00:00:00Z",
+              "count": 15,
+              "uniques": 9
+            },
+            {
+              "timestamp": "2026-09-21T00:00:00Z",
+              "count": 7,
+              "uniques": 5
+            }
+          ]
+        },
+        "popular_paths": [
+          {
+            "path": "/sc0528/viewloom/pull/7/commits",
+            "title": "/pull/7/commits",
+            "count": 1,
+            "uniques": 1
+          }
+        ],
+        "referrers": [],
+        "errors": []
+      }
     }
   ]
 }
